@@ -1,0 +1,15 @@
+# arquivos
+fotos/
+fatos/
+*.zip
+images/
+
+# ipynb
+.ipynb_checkpoints/
+
+# python
+__pycache__/
+
+# artefatos vscode
+.vscode/
+.pytest_cache/
