@@ -13,3 +13,7 @@ __pycache__/
 # artefatos vscode
 .vscode/
 .pytest_cache/
+
+# artefatos python
+FisLab.egg-info/
+build/

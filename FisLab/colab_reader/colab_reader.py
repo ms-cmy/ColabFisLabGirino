@@ -6,7 +6,7 @@ from logging import getLogger
 
 logger = getLogger(__name__)
 
-def mount_drive(path: str):
+def mount_drive():
     drive.mount(GOOGLE_BASE_PATH)
     logger.info("Drive is mounted")
 

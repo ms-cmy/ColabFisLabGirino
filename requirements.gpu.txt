@@ -1,0 +1,3 @@
+tensorflow[and-cuda]
+jupyterlab
+opencv-python
