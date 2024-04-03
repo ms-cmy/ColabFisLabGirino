@@ -1,6 +1,3 @@
 matplotlib
 pillow
-pandas
 numpy
-seaborn
-google-api-python-client
