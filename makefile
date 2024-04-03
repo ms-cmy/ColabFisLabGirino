@@ -1,2 +1,2 @@
 pytest:
-	pytest -s
+	pytest FisLab

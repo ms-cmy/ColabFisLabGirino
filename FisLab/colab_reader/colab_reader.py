@@ -1,7 +1,9 @@
-from FisLab.colab_reader import GOOGLE_BASE_PATH
+
 import os
 
 from logging import getLogger
+
+from FisLab.config import GOOGLE_BASE_PATH
 
 logger = getLogger(__name__)
 

@@ -1,0 +1,1 @@
+GOOGLE_BASE_PATH = '/content/drive'
