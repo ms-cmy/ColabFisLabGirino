@@ -6,9 +6,13 @@ def test_get_filepaths(tmp_path):
     subdir.mkdir()
     (subdir / "testfile1.txt").write_text("content")
     (subdir / "testfile2.txt").write_text("content")
+    (subdir / "testfile3.txt").write_text("content")
 
     with patch('FisLab.config.GOOGLE_BASE_PATH', str(tmp_path)):
         str_tmp_path = str(tmp_path)
-        expected = [str(subdir / "testfile1.txt"), str(subdir / "testfile2.txt")]
+        expected = [str(subdir / "testfile1.txt"),
+                    str(subdir / "testfile3.txt"),
+                    str(subdir / "testfile2.txt")]
         file_paths = [i for i in get_filepaths(str_tmp_path.rsplit("/", 1)[0]) if i.endswith(".txt")]
-        assert sorted(file_paths) == sorted(expected)
+        assert file_paths == sorted(expected) # make sure the function is sorting the list
+        assert file_paths != expected # make sure it's not the same list
